@@ -67,7 +67,6 @@ class windowComponent {
 
 
         for (int q = 0; q < 10; q++) {
-//            String text = String.valueOf(q);
             button[q] = new JButton(String.valueOf(q));
             buttonPanel.add(button[q]);
             button[q].addActionListener(cl);
@@ -108,7 +107,7 @@ class windowComponent {
         }
     }
 
-    public void list() {
+    public void list() {  //Генерируем колецкию рандомньІх цьІфрт от 1 до 10
         Random randNumber = new Random();
         int num, count2;
         for (int i = 0; i < 50; i++) {

@@ -20,7 +20,7 @@ public class ClickEngine implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent event) {
         buttNumm = Integer.parseInt(((JButton) event.getSource()).getText());
-        if (firstClick > -1 & lastClick > -1){
+        if (firstClick > -1 & lastClick > -1){ // если бьІло сделано  три клика
             winComp.button[firstClick].setIcon(null);
             winComp.button[lastClick].setIcon(null);
             winComp.button[buttNumm].setIcon(null);
